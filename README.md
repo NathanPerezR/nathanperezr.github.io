@@ -1,0 +1,1 @@
+This repo holds the code and files found on my personal website. The code for [the landing page](https://nathanperezr.github.io) is located in index.html. personalwebsiteV1.html I've included, but it isn't in the best of shape, and was made before I really understood the best practices of html or css. Feel free to use any code located in this repo in any way you would like.
