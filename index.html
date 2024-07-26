@@ -79,11 +79,23 @@
 
     .navbar {
       background-color: #FFD7D7;
+
+
     }
 
-    .navbar-brand {
+    .no-link-style {
+      color: black;
+      text-decoration: none;
+    }
+
+    .navbar-name {
       margin-left: 20px;
       font-weight: bold;
+    }
+
+    .navbar-text {
+      margin-right: 20px;
+      font-weight: 500;
     }
 
     .sticky-top {
@@ -208,60 +220,13 @@
 
 </head>
 
-<body>
-  <section class="container landing-page">
-    <div class="row justify-content-center m-2">
-      <article class="col col-lg-5 card card-custom-name-bk card-landing">
-        <h1>Nathan Perez</h1>
-      </article>
-    </div>
-    <div class="row row-cols-1 row-cols-lg-2 justify-content-center  m-2">
-      <article class="col col-lg-5 card card-custom-aboutme-bk card-landing">
-        <h3>About Me</h3>
-        <p>
-          Hi! I'm a Computer Science major studying at University of Texas at Dallas.
-          This past summer I worked at
-          <a href="https://www.tylertech.com/" class="landing-page-link" target="_blank">Tyler Technologies</a>,
-          as a software development intern.
-          In my freetime I enjoy photography, programming, and exploring Dallas.
-        </p>
-      </article>
-      <article class="col col-lg-5 card card-custom-links-bk card-landing mt-2 mt-lg-0 mx-lg-2">
-        <h3>Links</h3>
-        <p>
-          Feel free to reach out to me on email at
-          <a class="landing-page-link"
-            href="mailto:&#078;&#097;&#116;&#104;&#097;&#110;&#080;&#101;&#114;&#101;&#122;&#046;&#066;&#117;&#115;&#105;&#110;&#101;&#115;&#115;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">
-            &#078;&#097;&#116;&#104;&#097;&#110;&#080;&#101;&#114;&#101;&#122;&#046;&#066;&#117;&#115;&#105;&#110;&#101;&#115;&#115;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>
-          You can also find me on
-          <a href="https://linkedin.com/in/nathanperezr" class="landing-page-link" target="_blank">LinkedIn</a>,
-          <a href="https://github.com/NathanPerezR" class="landing-page-link" target="_blank">Github</a>,
-          <a href="https://instagram.com/nathanperezr" class="landing-page-link" target="_blank">Instagram</a>, and
-          <a href="https://twitter.com/nathanperezr" class="landing-page-link" target="_blank">Twitter</a>.
-          My most recent
-          <a href="content//Nathan Perez [WebsiteResume].pdf" class="landing-page-link" target="_blank">Resume</a>
-          and
-          <a href="content//NathanPerez_CV.pdf" class="landing-page-link" target="_blank">CV</a>
-          are located here as well.
-        </p>
-      </article>
-    </div>
-    <div class="row justify-content-center align-content-cente m-2">
-      <article class="col col-lg-5 card card-custom-aboutthissite-bk card-landing">
-        <h3>About This Site</h3>
-        <p>
-          This website was created during the summer of 2023. I update this site with new projects
-          as I complete them, so it's always a work in progress.
-        </p>
-      </article>
-    </div>
-  </section>
-
-
   <!--NAVBAR-->
   <nav class="navbar navbar-light sticky-top">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-name no-link-style" href="#">
       Nathan R. Perez
+    </a>
+    <a class="navbar-text no-link-style" href="content/Nathan Perez [WebsiteResume].pdf">
+      Resume
     </a>
   </nav>
 
