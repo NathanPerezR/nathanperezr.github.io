@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title>Nathan Perez Personal Website</title>
+    <title>Nathan Perez</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,16 +12,16 @@
     <base target="_blank">
 
     <style>
+
       body {
         font-family: "Jost", sans-serif;
         color: #212427;
-
         margin: 2.25vw auto;
         max-width: 1900px;
       }
 
       .lightgrey {
-        color: #989898;
+        color: #6e6e6e;
       }
 
       .placeholder-img {
@@ -161,99 +161,116 @@
       }
 
       a {
-        position: relative;
+        color: black;
         text-decoration: underline;
         text-decoration-thickness: 20%;
         text-decoration-color: black;
-        color: black;
+        background-image: linear-gradient(#FFD7D7 0 0);
+        background-size: 0% 100%;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        transition: background-size 0.7s ease;
       }
 
-      a::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 0;
-        height: 100%;
-        background: #FFD7D7;
-        z-index: -1;
-        transition: width 0.5s ease;
-      }
-
-      a:hover::before {
-        width: 100%;
+      a:hover {
+        background-size: 100% 100%;
       }
 
       .latest-update-style b {
-        font-size: .83em;
+        font-size: .95em;
       }
-      
-    </style>
-  </head>
+
+      a:focus-visible {
+        outline: 2px solid #FFD7D7;
+        outline-offset: 2px;
+      }
+
+      h2 {
+        font-size: 1.25em;
+      }
+
+</style>
+</head>
   <body>
     <div class="page-wrapper">
       <div class="content-layout">
         <div id="picture-and-link-and-bio-layout">
           <section class="section center" id="picture-and-links">
             <h1 id="name">Nathan Perez</h1>
-            <img src="content/picture_of_me.jpeg" class="placeholder-img" alt="Photo of Nathan wearing a pink bennie, grey jacket, and yellow shirt. It is snowing." />
-            <ul id="under-picture">
-              <li><a href="https://linkedin.com/in/nathanperezr/">LinkedIn</a></li>
-              <li> | <a href="content/Nathan_Perez_Resume.pdf">Resume</a></li>
-              <li> | <a href="https://github.com/NathanPerezR/">GitHub</a></li>
-            </ul>
+            <img 
+              src="content/picture_of_me.jpeg" 
+              class="placeholder-img" 
+              alt="Photo of Nathan wearing a pink bennie, grey jacket, and yellow shirt. It is snowing." />
+            <nav aria-label="Primary links">
+              <ul id="under-picture">
+                <li>   <a href="https://linkedin.com/in/nathanperezr/">LinkedIn</a></li>
+                <li> | <a href="content/Nathan_Perez_Resume.pdf">Resume</a></li>
+                <li> | <a href="https://github.com/NathanPerezR/">GitHub</a></li>
+              </ul>
+            </nav>
           </section>
 
           <section class="section word-section" id="bio">
-            <h1>Bio</h1>
-            <article>
+            <h2>Bio</h2>
           <article>
             <p></p>
             <p>
               Hello!
             </p>
             <p>
-              I'm Nathan, currently I'm a senior computer science student at the <a href="https://www.utdallas.edu">University of Texas at Dallas</a>, I made this website to share some links, what I've been up to, as well as random projects I've created.
+              I'm Nathan, currently I'm a senior computer science student at the
+                <a href="https://www.utdallas.edu">University of Texas at Dallas</a>, 
+              starting this summer I'll be working as a software engineer at 
+                <a href="https://www.fidelity.com/">Fidelity</a>.
             </p>
             <p>
               This past summer, I worked as an undergraduate researcher as part of the
-              <a href="https://engineering.louisville.edu/academics/departments/computer/reu-site-summer-research-program-computer/">University of Louisville REU program</a>, where I worked on machine learning explainability for disaster response.
+                <a href="https://engineering.louisville.edu/academics/departments/computer/reu-site-summer-research-program-computer/">University of Louisville REU program</a>
+              , where I worked on machine learning explainability for disaster response.
             </p>
             <p>
-              Previously I've worked at <a href="https://www.tylertech.com">Tyler Technologies</a> as a software development intern, and
-              <a href="https://ayokasystems.com">Ayoka Systems</a> as a web development intern.
+              Previously I've worked at 
+                <a href="https://www.tylertech.com">Tyler Technologies</a> 
+              as a software development intern, and
+                <a href="https://ayokasystems.com">Ayoka Systems</a> 
+              as a web development intern.
             </p>
-            <p class="lightgrey">Last edited: September 2025 </p>
+            <p class="lightgrey">Last edited: October 2025 </p>
           </article>
           </section>
         </div>
 
         <section class="section word-section">
-          <h1>Selected Projects</h1>
+          <h2>Selected Projects</h2>
           <p></p>
           <article>
             <p>
-            <a href="https://devpost.com/software/moist-meter-nj04ti">MoistMeter:</a> MoistMeter is a moisture detector for houses. Created during HackUTA 2023, winning
-            project for State Farm track and general track.
+              <a href="https://devpost.com/software/moist-meter-nj04ti">MoistMeter:</a>
+              MoistMeter is a moisture detector for houses. Created during HackUTA 2023, winning 
+              project for State Farm track and general track.
             </p>
           </article>
           <article>
             <p>
-            <a href="https://github.com/NathanPerezR/GameBoy-Emulator">GameBoy Emulator:</a> Work-in-progress GameBoy emulator I'm writing for fun. Currently the CPU is fully functional and tested, graphics are a work in progress.
+              <a href="https://github.com/NathanPerezR/GameBoy-Emulator">GameBoy Emulator:</a> 
+              Work-in-progress GameBoy emulator I'm writing for fun. Currently the CPU is fully 
+              functional and tested, graphics are a work in progress.
             </p>
           </article>
           <article>
             <p>
-            <a href="https://github.com/ACM-Research/HateDeception_public">HateDeception: Adversarial NLP:</a> Created in collaboration with the ACM Research Club at UTD. Focused on using adversarial learning techniques to discover vulnerabilities in content filtering models.
+              <a href="https://github.com/ACM-Research/HateDeception_public">HateDeception: Adversarial NLP:</a> 
+              Created in collaboration with the ACM Research Club at UTD. Focused on using 
+              adversarial learning techniques to discover vulnerabilities in content filtering models.
             </p>
           </article>
         </section>
 
         <section class="section word-section latest-update-style">
-          <h1>Latest Updates</h1>
+          <h2>Latest Updates</h2>
           <p></p>
-          <article">
-            <p><b >Sep 2025</b> - Attended Tapia 2025</p>
+          <article>
+            <p><b>Sep 2025</b> - Attended Tapia 2025</p>
            <article>  
             <p><b >May 2025</b> - Undergraduate research at UofL (REU)</p>
           </article>             
